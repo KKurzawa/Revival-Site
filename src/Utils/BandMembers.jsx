@@ -12,6 +12,7 @@ import { FaSpotify } from "react-icons/fa";
 
 export const BandMembers = [
     {
+        id: 1,
         name: 'Brett Lucas',
         pic: Brett,
         description: "Betty Lavette/Thornetta Davis/The Brett Lucas Band",
@@ -27,6 +28,7 @@ export const BandMembers = [
         spotifyLink: 'https://open.spotify.com/artist/1ZFUXS30BsBQywIYLLp1VY',
     },
     {
+        id: 2,
         name: 'Kris Kurzawa',
         pic: Kris,
         description: "Alexander Zonjic/Jeff Lorber/The Kris Kurzawa Group",
@@ -42,6 +44,7 @@ export const BandMembers = [
         spotifyLink: 'https://open.spotify.com/artist/6avBe32i2ADGGnJAFnQHYx',
     },
     {
+        id: 3,
         name: 'Dale Grisa',
         pic: Dale,
         description: "Karen Newman/Joe Shmoe/Jill Jack",
@@ -55,6 +58,7 @@ export const BandMembers = [
         spotifyLink: false,
     },
     {
+        id: 4,
         name: 'Chuck Bartels',
         pic: Chuck,
         description: "Sturgil Simpson/Betty Lavette/Thornetta Davis",
@@ -68,6 +72,7 @@ export const BandMembers = [
         spotifyLink: false,
     },
     {
+        id: 5,
         name: 'Rob Avsharian',
         pic: Rob,
         description: "Andy Timmons/Snarky Puppy/Bobgoblin",
@@ -81,6 +86,7 @@ export const BandMembers = [
         spotifyLink: false,
     },
     {
+        id: 6,
         name: 'Jesse Kramer',
         pic: Jesse,
         description: "Paul Keller/Tim Haldeman/The Jesse Kramer Trio",

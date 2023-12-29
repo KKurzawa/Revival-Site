@@ -1,5 +1,6 @@
 export const ShowList = [
     {
+        id: 1,
         date: 'Jan 20 2024',
         time: '8pm',
         venue: "O'Malley's Super Spirits And Song",
@@ -7,6 +8,7 @@ export const ShowList = [
         ticketLink: false,
     },
     {
+        id: 2,
         date: 'March 2 2024',
         time: '8:30pm',
         venue: "The Cadieux Cafe",
@@ -14,6 +16,7 @@ export const ShowList = [
         ticketLink: 'https://cadieuxcafe.com/',
     },
     {
+        id: 3,
         date: 'June 14 2024',
         time: '7pm',
         venue: "The Cadieux Cafe",
@@ -21,6 +24,7 @@ export const ShowList = [
         ticketLink: false,
     },
     {
+        id: 4,
         date: 'Aug 16 2024',
         time: '7pm',
         venue: "The Cadieux Cafe",

@@ -16,9 +16,9 @@ function Shows() {
                 {ShowList.map((show) => (
                     <section key={show.date} className='flex flex-col md:hidden justify-center items-center'>
                         <div className='date-time flex flex-row justify-center'>
-                            <div className='sm-date pr-1'>{show.date}</div>
+                            <div key={show.date} className='sm-date pr-1'>{show.date}</div>
                             <span className='pr-1'>@</span>
-                            <div className='sm-time'>{show.time}</div>
+                            <div key={show.id} className='sm-time'>{show.time}</div>
                         </div>
                         <div className='sm-venue pb-1'>
                             <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-gray-600 transition-all duration-300'>{show.venue}</a>
@@ -37,8 +37,8 @@ function Shows() {
             <div className='text-lg lg:text-2xl'>
                 {ShowList.map((show) => (
                     <section className='section hidden md:grid pl-10'>
-                        <div className='date pb-5'>{show.date}</div>
-                        <div className='time pb-5'>{show.time}</div>
+                        <div key={show.date} className='date pb-5'>{show.date}</div>
+                        <div key={show.id} className='time pb-5'>{show.time}</div>
                         <div className='venue pb-5'>
                             <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-gray-600 transition-all duration-300'>{show.venue}</a>
                         </div>

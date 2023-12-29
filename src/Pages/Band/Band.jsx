@@ -10,10 +10,10 @@ function Band() {
                 <section className='flex flex-col'>
                     {BandMembers.map((member) => (
                         <div className='flex flex-col items-center'>
-                            <div className='text-3xl pb-1'>{member.name}</div>
-                            <img src={member.pic} alt={member.name} className='w-[75%] rounded-xl pb-1'></img>
-                            <div className='text-xl text-center w-[75%] italic pb-1'>{member.description}</div>
-                            <div className='flex flex-row w-[50%] justify-center text-2xl pb-3'>
+                            <div id={member.name} className='text-3xl pb-1'>{member.name}</div>
+                            <img id={member.pic} src={member.pic} alt={member.name} className='w-[75%] rounded-xl pb-1'></img>
+                            <div id={member.description} className='text-xl text-center w-[75%] italic pb-1'>{member.description}</div>
+                            <div id={member.id} className='flex flex-row w-[50%] justify-center text-2xl pb-3'>
                                 {member.facebookIcon === false ? (
                                     <div></div>
                                 ) : (
@@ -51,10 +51,10 @@ function Band() {
                     <section className='flex flex-col'>
                         {BandMembers.map((member, index) => index % 2 === 0 && (
                             <div className='flex flex-col items-center'>
-                                <div className='text-3xl pb-1'>{member.name}</div>
-                                <img src={member.pic} alt={member.name} className='w-[75%] h-auto rounded-xl pb-1'></img>
-                                <div className='text-xl text-center w-[75%] italic pb-1'>{member.description}</div>
-                                <div className='flex flex-row w-[50%] justify-center text-2xl pb-3'>
+                                <div id={member.name} className='text-3xl pb-1'>{member.name}</div>
+                                <img id={member.pic} src={member.pic} alt={member.name} className='w-[75%] h-auto rounded-xl pb-1'></img>
+                                <div id={member.description} className='text-xl text-center w-[75%] italic pb-1'>{member.description}</div>
+                                <div id={member.id} className='flex flex-row w-[50%] justify-center text-2xl pb-3'>
                                     {member.facebookIcon === false ? (
                                         <div></div>
                                     ) : (
@@ -89,10 +89,10 @@ function Band() {
                     <section className='flex flex-col'>
                         {BandMembers.map((member, index) => index % 2 !== 0 && (
                             <div className='flex flex-col items-center'>
-                                <div className='text-3xl pb-1'>{member.name}</div>
-                                <img src={member.pic} alt={member.name} className='w-[75%] h-auto rounded-xl pb-1'></img>
-                                <div className='text-xl text-center w-[75%] italic pb-1'>{member.description}</div>
-                                <div className='flex flex-row w-[50%] justify-center text-2xl pb-3'>
+                                <div id={member.name} className='text-3xl pb-1'>{member.name}</div>
+                                <img id={member.pic} src={member.pic} alt={member.name} className='w-[75%] h-auto rounded-xl pb-1'></img>
+                                <div id={member.description} className='text-xl text-center w-[75%] italic pb-1'>{member.description}</div>
+                                <div id={member.id} className='flex flex-row w-[50%] justify-center text-2xl pb-3'>
                                     {member.facebookIcon === false ? (
                                         <div></div>
                                     ) : (
