@@ -9,7 +9,7 @@ function Shows() {
 
     return (
         <main className=''>
-            <img src={ShowsPic}></img>
+            <img src={ShowsPic} alt='RevivalPic2'></img>
             <h2 className='text-center text-5xl py-5'>Shows</h2>
             {/* small */}
             <div className='text-2xl'>
@@ -21,13 +21,13 @@ function Shows() {
                             <div className='sm-time'>{show.time}</div>
                         </div>
                         <div className='sm-venue pb-1'>
-                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-gray-600'>{show.venue}</a>
+                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-gray-600 transition-all duration-300'>{show.venue}</a>
                         </div>
                         <div className='sm-tickets pb-5'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800'>Tickets</button>
+                                <button onClick={handleClick} className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800 transition-all duration-300'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-black text-white p-[.2em] rounded-md hover:text-gray-300 hover:bg-gray-800'>Tickets</a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-black text-white p-[.2em] rounded-md hover:text-gray-300 hover:bg-gray-800 transition-all duration-300'>Tickets</a>
                             )}
                         </div>
                     </section>
@@ -40,13 +40,13 @@ function Shows() {
                         <div className='date pb-5'>{show.date}</div>
                         <div className='time pb-5'>{show.time}</div>
                         <div className='venue pb-5'>
-                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-gray-600'>{show.venue}</a>
+                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-gray-600 transition-all duration-300'>{show.venue}</a>
                         </div>
                         <div className='tickets pb-5 grid justify-end pr-10'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800'>Tickets</button>
+                                <button onClick={handleClick} className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800 transition-all duration-300'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800'>Tickets</a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800 transition-all duration-300'>Tickets</a>
                             )}
                         </div>
                     </section>

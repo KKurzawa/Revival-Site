@@ -35,7 +35,7 @@ function Navbar() {
                 <div className='flex items-center justify-between h-28'>
                     <div className='flex justify-center items-center'>
                         <a href='/' className=''>
-                            <img src={Logo}></img></a>
+                            <img src={Logo} alt='RevivalLogo'></img></a>
                     </div>
                     <div className='hidden md:block'>
                         <div className='ml-10 flex items-baseline space-x-4'>
@@ -46,7 +46,7 @@ function Navbar() {
                     </div>
                     {/* hamburger menu */}
                     <div className='-m-2 flex md:hidden'>
-                        <button type='button' onClick={handleMenu} className='inline-flex items-center justify-center m-3 rounded-md text-gray-300 text-4xl hover:text-white hover:bg-gray-600 ring-2 ring-offset-2 ring-offset-gray-800 ring-white'>
+                        <button type='button' onClick={handleMenu} className='inline-flex items-center justify-center m-3 rounded-md text-gray-300 text-4xl hover:text-white hover:bg-gray-600 ring-2 ring-offset-2 ring-offset-gray-800 ring-white transition-all duration-300'>
                             <span className='sr-only'>Open Main Menu</span>
                             {open == true ? <FaTimes /> : <FaBars />}
                         </button>
