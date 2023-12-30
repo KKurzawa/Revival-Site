@@ -1,5 +1,6 @@
 import ShowsPic from '../../assets/Photos/ShowsPic.jpeg';
 import { ShowList } from '../../Utils/ShowList.jsx';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import './Shows.css';
 
 function Shows() {
@@ -9,7 +10,7 @@ function Shows() {
 
     return (
         <main className=''>
-            <img src={ShowsPic} alt='RevivalPic2'></img>
+            <LazyLoadImage src={ShowsPic} alt='RevivalPic2' />
             <h2 className='text-center text-5xl py-5'>Shows</h2>
             {/* small */}
             <div className='text-2xl'>

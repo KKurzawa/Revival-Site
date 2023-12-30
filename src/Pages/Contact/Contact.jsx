@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { validateEmail } from '../../Utils/Helpers.js';
 import ContactPic from '../../assets/Photos/Contact.jpeg';
 import './Contact.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Contact = () => {
 
@@ -47,7 +48,7 @@ const Contact = () => {
     }
     return (
         <div className='flex flex-col items-center md:mb-0 min-h-screen'>
-            <img id='NatPic' src={ContactPic} />
+            <LazyLoadImage id='ContactPic' src={ContactPic} />
             <h2 className="heading-text text-black text-4xl md:text-6xl mt-5">Contact Us</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
                 <input
