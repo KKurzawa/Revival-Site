@@ -7,8 +7,8 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 
 import './Testimonials.css'
 
-// const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
-const apiBaseUrl = "http://localhost:3001";
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
+
 function Testimonials() {
     const [input, setInput] = useState({
         userfirstname: '',
