@@ -31,15 +31,15 @@ function Navbar() {
 
     return (
         // <div className='bg-black h-36 lg:h-44 w-full flex items-center'>
-        <div className='bg-black flex flex-col md:flex-row justify-center md:justify-between h-28'>
-            <div className='flex justify-center items-center'>
-                <a href='/' className=''>
-                    <img src={Logo} alt='RevivalLogo' className='justify-center w-[75%] md:w-full'></img></a>
+        <header className='flex flex-col lg:flex-row items-center  bg-black w-full'>
+            <div className=''>
+                <a href='/' className='flex justify-center'>
+                    <img src={Logo} alt='RevivalLogo' className='justify-center w-[100%] '></img></a>
             </div>
             <div className=''>
-                <div className='flex items-baseline space-x-4'>
+                <div className='flex justify-end items-center lg:ml-48'>
                     {navLinks.map((link, index) => (
-                        <a key={index} className='text-gray-300 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-2xl lg:text-4xl font-medium' href={link.link}>{link.title}</a>
+                        <a key={index} className='text-gray-300 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-3xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
                     ))}
                 </div>
             </div>
@@ -51,7 +51,7 @@ function Navbar() {
                         </button>
                     </div> */}
 
-        </div>
+        </header>
         /* {open ? (
             <div className='md:hidden h-screen flex flex-col'>
                 <div className='ox-2 pt-2 pb-3 space-y-1 sm:px-3'>
