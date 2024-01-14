@@ -31,13 +31,13 @@ function Navbar() {
 
     return (
         // <div className='bg-black h-36 lg:h-44 w-full flex items-center'>
-        <header className='flex flex-col lg:flex-row items-center  bg-black w-full'>
+        <header className='flex flex-col lg:flex-row items-center justify-center bg-black w-full h-60'>
             <div className=''>
-                <a href='/' className='flex justify-center'>
-                    <img src={Logo} alt='RevivalLogo' className='justify-center w-[100%] '></img></a>
+                <a href='/' className=''>
+                    <img src={Logo} alt='RevivalLogo' className='w-[100%]'></img></a>
             </div>
-            <div className=''>
-                <div className='flex justify-end items-center lg:ml-48'>
+            <div className='w-full pt-3'>
+                <div className='flex justify-evenly lg:ml-48'>
                     {navLinks.map((link, index) => (
                         <a key={index} className='text-gray-300 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-3xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
                     ))}
