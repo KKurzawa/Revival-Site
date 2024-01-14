@@ -47,33 +47,37 @@ const Contact = () => {
         console.log(templateParams);
     }
     return (
-        <div className='flex flex-col items-center md:mb-0 min-h-screen'>
+        <main className='flex flex-col items-center md:mb-0 min-h-screen'>
             <LazyLoadImage id='ContactPic' src={ContactPic} />
             <h2 className="heading-text text-black text-4xl md:text-6xl mt-5">Contact Us</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
                 <input
-                    className='input'
+                    autoComplete="off"
+                    className='input outline-none'
                     type='text'
                     placeholder='Your Name'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
                 <input
-                    className='input'
+                    autoComplete="off"
+                    className='input outline-none'
                     type='email'
                     placeholder='Your Email'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
-                    className='input'
+                    autoComplete="off"
+                    className='input outline-none'
                     type='subject'
                     placeholder='Subject'
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
                 />
                 <textarea
-                    className='input'
+                    autoComplete="off"
+                    className='input outline-none'
                     cols='30'
                     rows='5'
                     placeholder='Message'
@@ -81,14 +85,14 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
-                <button className='submit-button hover:text-gray-300 hover:bg-gray-800 transition-all duration-300' type='submit'>Submit</button>
+                <button className='submit-button outline-none hover:text-gray-300 hover:bg-gray-800 transition-all duration-300' type='submit'>Submit</button>
             </form>
             {errorMessage && (
                 <div>
                     <p className="error-text text-black text-xl md:text-4xl mb-5">{errorMessage}</p>
                 </div>
             )}
-        </div>
+        </main>
     )
 }
 

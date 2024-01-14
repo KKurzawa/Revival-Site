@@ -1,0 +1,21 @@
+.form-group{
+    padding-left: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: solid 1px black;
+    color: black;
+}
+
+.post-button {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    color:white;
+    width: 5rem;
+    height: 2rem;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: .25rem;
+  }

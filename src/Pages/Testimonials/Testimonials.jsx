@@ -1,21 +1,30 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import TestimonialsPic from "../../assets/Photos/Testimonials.jpeg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri";
+
+import './Testimonials.css'
+
 // const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
 const apiBaseUrl = "http://localhost:3001";
 function Testimonials() {
     const [input, setInput] = useState({
-        username: '',
+        userfirstname: '',
+        userlastname: '',
         comment: '',
     })
 
     const [comments, setComments] = useState([{
-        username: '',
+        userfirstname: '',
+        userlastname: '',
         comment: ''
     }])
 
     function validateComment() {
-        if (!input.username || !input.comment) {
-            alert('You must enter your name and comment to submit.')
+        if (!input.userfirstname || !input.userlastname || !input.comment) {
+            alert('You must enter your first name, last name, and experience to submit.')
         }
     }
 
@@ -39,58 +48,64 @@ function Testimonials() {
         })
     }
 
-    // function handleClick(e) {
-    //     e.preventDefault();
-    //     const newComment = {
-    //         username: input.username,
-    //         comment: input.comment
-    //     }
-    //     axios.post(`${apiBaseUrl}/create`, newComment)
-    // }
-
     function handleSubmit(e) {
         console.log('submitted');
         validateComment();
-        // e.preventDefault();
         const newComment = {
-            username: input.username,
+            userfirstname: input.userfirstname,
+            userlastname: input.userlastname,
             comment: input.comment
         }
-
-        if (input.username && input.comment) {
-            alert(`Thank you ${input.username} for your comment!`);
+        if (input.userfirstname && input.userlastname && input.comment) {
+            alert(`Thank you ${input.userfirstname} ${input.userlastname} for your comment!`);
             axios.post(`${apiBaseUrl}/create`, newComment);
         }
     };
 
     return (
-        <main>
-            <div className="form-container">
-                <h1>Create Comment</h1>
-                <form onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <input onChange={handleChange} name="username" value={input.username} autoComplete="off" className="form-control" placeholder="Your Name">
-
-                        </input>
-                    </div>
-                    <div className="form-group">
-                        <textarea onChange={handleChange} name="comment" value={input.comment} autoComplete="off" className="form-control" placeholder="Your Comment">
-
-                        </textarea>
-                    </div>
-                    <button className="btn-info">Add Comment</button>
-                </form>
-            </div>
+        <main className="flex flex-col items-center md:mb-0 min-h-screen">
+            <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} />
+            <h1 className="text-center text-black text-3xl md:text-6xl mt-5">Post About Your Experience <br></br>With Revival</h1>
+            <form onSubmit={handleSubmit} className="flex flex-col content-center m-[20px] w-[50%] md:w-[40%]">
+                <input onChange={handleChange}
+                    name="userfirstname" value={input.userfirstname}
+                    autoComplete="off"
+                    className="form-group outline-none"
+                    placeholder="Your First Name"
+                    type="comment"
+                >
+                </input>
+                <input onChange={handleChange}
+                    name="userlastname" value={input.userlastname}
+                    autoComplete="off"
+                    className="form-group outline-none"
+                    placeholder="Your Last Name"
+                    type="comment"
+                >
+                </input>
+                <textarea
+                    onChange={handleChange}
+                    name="comment"
+                    value={input.comment}
+                    autoComplete="off"
+                    type="comment"
+                    className="form-group outline-none"
+                    placeholder="Your Experience"
+                    cols='30'
+                    rows='5'
+                >
+                </textarea>
+                <button className="post-button hover:text-gray-300 hover:bg-gray-800 transition-all duration-300">Add Post</button>
+            </form>
             <div className="comments-container">
-                <h1>Comments</h1>
+                <h1 className="text-center text-black text-3xl md:text-6xl -mb-4">Fan Experiences</h1>
                 {comments.map(item =>
-                    <div>
-                        <h1 key={item.username}>{item.username}</h1>
-                        <h2 key={item.comment}>{item.comment}</h2>
+                    <div className="mx-10 md:mx-14 lg:mx-20 my-6 md:my-8">
+                        <h2 key={item.comment} className="text-center text-2xl md:text-5xl pb-2">{item.comment}</h2>
+                        <h2 key={item.userfirstname} className="text-end text-lg md:text-3xl">- {item.userfirstname}&nbsp;{item.userlastname}</h2>
                     </div>)}
             </div>
         </main>
-
     )
 }
 
