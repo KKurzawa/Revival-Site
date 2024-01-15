@@ -49,6 +49,7 @@ function Testimonials() {
     }
 
     function handleSubmit(e) {
+        e.preventDefault();
         console.log('submitted');
         validateComment();
         const newComment = {
@@ -58,7 +59,11 @@ function Testimonials() {
         }
         if (input.userfirstname && input.userlastname && input.comment) {
             alert(`Thank you ${input.userfirstname} ${input.userlastname} for your comment!`);
-            axios.post(`${apiBaseUrl}/create`, newComment);
+            axios.post(`${apiBaseUrl}/create`, newComment).then(result => {
+                location.reload()
+            }).catch(error => {
+                console.error(error);
+            });
         }
     };
 
