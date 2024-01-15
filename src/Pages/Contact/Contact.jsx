@@ -47,7 +47,7 @@ const Contact = () => {
         console.log(templateParams);
     }
     return (
-        <main className='flex flex-col items-center md:mb-0 min-h-screen'>
+        <main className='flex flex-col items-center md:mb-0 min-h-64'>
             <LazyLoadImage id='ContactPic' src={ContactPic} />
             <h2 className="heading-text text-black text-4xl md:text-6xl mt-5">Contact Us</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
