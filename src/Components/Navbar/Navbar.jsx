@@ -34,7 +34,7 @@ function Navbar() {
         <header className='flex flex-col lg:flex-row items-center justify-center bg-black w-full h-64'>
             <div className='lg:w-full'>
                 <a href='/' className=''>
-                    <img src={Logo} alt='RevivalLogo' className='w-full pt-5 lg:pt-0 lg:w-[200%] lg:ml-3 transition-all duration-500 hover:bg-gray-600 rounded-md'></img></a>
+                    <img src={Logo} alt='RevivalLogo' className='w-full mt-5 lg:pt-0 lg:w-[200%] lg:ml-3 transition-all duration-500 hover:bg-gray-600 rounded-md'></img></a>
             </div>
             <div className='w-full pt-3 lg:ml-3'>
                 <div className='flex justify-evenly'>
