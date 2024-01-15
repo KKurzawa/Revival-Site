@@ -12,7 +12,7 @@ function Footer() {
                 <a href='https://www.youtube.com/channel/UCY_f-YAq6RE4hX6qqCcM_3w' target="_blank" rel="noreferrer" className='hover:text-gray-300 transition-all duration-300'><IoLogoYoutube /></a>
             </div>
             <a href='https://immense-everglades-74554-f9bad473782a.herokuapp.com/' target="_blank" rel="noreferrer">
-                <p className='flex justify-end text-white hover:text-gray-300 transition-all duration-300 mt-5 mr-2'>Site Designed and Built by Kris Kurzawa</p>
+                <p className='flex justify-end text-white hover:text-gray-300 transition-all duration-300 mt-5 mr-2 text-xl'>Site Designed and Built by Kris Kurzawa</p>
             </a>
         </footer>
 

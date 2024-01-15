@@ -11,24 +11,25 @@ function Shows() {
     return (
         <main className=''>
             <LazyLoadImage src={ShowsPic} alt='RevivalPic2' />
-            <h2 className='text-center text-5xl py-5'>Shows</h2>
+            <h2 className='text-center text-8xl py-5'>Shows</h2>
             {/* small */}
-            <div className='text-2xl'>
+            <div className='text-6xl'>
                 {ShowList.map((show) => (
-                    <section key={show.date} className='flex flex-col md:hidden justify-center items-center'>
+                    <section key={show.date} className='flex flex-col lg:hidden justify-center items-center'>
                         <div className='date-time flex flex-row justify-center'>
                             <div key={show.date} className='sm-date pr-1'>{show.date}</div>
                             <span className='pr-1'>@</span>
                             <div key={show.id} className='sm-time'>{show.time}</div>
                         </div>
-                        <div className='sm-venue pb-1'>
+                        <div className='sm-venue pb-5'>
                             <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-gray-600 transition-all duration-300'>{show.venue}</a>
                         </div>
-                        <div className='sm-tickets pb-5'>
+                        <div className='sm-tickets pb-20'>
                             {show.ticketLink === false ? (
                                 <button onClick={handleClick} className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800 transition-all duration-300'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-black text-white p-[.2em] rounded-md hover:text-gray-300 hover:bg-gray-800 transition-all duration-300'>Tickets</a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800 transition-all duration-300'>Tickets</button></a>
+
                             )}
                         </div>
                     </section>
@@ -37,7 +38,7 @@ function Shows() {
             {/* medium/large */}
             <div className='text-lg lg:text-2xl'>
                 {ShowList.map((show) => (
-                    <section className='section hidden md:grid pl-10'>
+                    <section className='section hidden lg:grid pl-10'>
                         <div key={show.date} className='date pb-5'>{show.date}</div>
                         <div key={show.id} className='time pb-5'>{show.time}</div>
                         <div className='venue pb-5'>

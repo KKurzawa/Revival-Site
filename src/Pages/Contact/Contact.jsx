@@ -49,7 +49,7 @@ const Contact = () => {
     return (
         <main className='flex flex-col items-center md:mb-0 min-h-64'>
             <LazyLoadImage id='ContactPic' src={ContactPic} />
-            <h2 className="heading-text text-black text-8xl lg:text-8xl mt-5">Contact Us</h2>
+            <h2 className="heading-text text-black text-8xl mt-20">Contact Us</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%]'>
                 <input
                     autoComplete="off"

@@ -70,12 +70,12 @@ function Testimonials() {
     return (
         <main className="flex flex-col items-center md:mb-0 min-h-screen">
             <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} />
-            <h1 className="text-center text-black text-3xl md:text-6xl mt-5">Post About Your Experience <br></br>With Revival</h1>
-            <form onSubmit={handleSubmit} className="flex flex-col content-center m-[20px] w-[50%] md:w-[40%]">
+            <h1 className="text-center text-black text-7xl mt-5">Post About Your Experience <br></br>With Revival</h1>
+            <form onSubmit={handleSubmit} className="flex flex-col content-center m-[20px] w-[50%]">
                 <input onChange={handleChange}
                     name="userfirstname" value={input.userfirstname}
                     autoComplete="off"
-                    className="form-group outline-none"
+                    className="form-group outline-none min-h-16 text-5xl"
                     placeholder="Your First Name"
                     type="comment"
                 >
@@ -83,7 +83,7 @@ function Testimonials() {
                 <input onChange={handleChange}
                     name="userlastname" value={input.userlastname}
                     autoComplete="off"
-                    className="form-group outline-none"
+                    className="form-group outline-none min-h-16 text-5xl"
                     placeholder="Your Last Name"
                     type="comment"
                 >
@@ -94,13 +94,13 @@ function Testimonials() {
                     value={input.comment}
                     autoComplete="off"
                     type="comment"
-                    className="form-group outline-none"
+                    className="form-group outline-none text-5xl"
                     placeholder="Your Experience"
                     cols='30'
                     rows='5'
                 >
                 </textarea>
-                <button className="post-button hover:text-gray-300 hover:bg-gray-800 transition-all duration-300">Add Post</button>
+                <button className="post-button text-4xl hover:text-gray-300 hover:bg-gray-800 transition-all duration-300">Add Post</button>
             </form>
             <div className="comments-container">
                 <h1 className="text-center text-black text-3xl md:text-6xl -mb-4">Fan Experiences</h1>
