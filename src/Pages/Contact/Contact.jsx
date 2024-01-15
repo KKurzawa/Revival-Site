@@ -49,7 +49,7 @@ const Contact = () => {
     return (
         <main className='flex flex-col items-center md:mb-0 min-h-64'>
             <LazyLoadImage id='ContactPic' src={ContactPic} />
-            <h2 className="heading-text text-black text-8xl mt-20">Contact Us</h2>
+            <h2 className="heading-text text-white text-8xl mt-20">Contact Us</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%]'>
                 <input
                     autoComplete="off"
@@ -85,11 +85,11 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
-                <button className='submit-button text-5xl outline-none hover:text-gray-300 hover:bg-gray-800 transition-all duration-300' type='submit'>Submit</button>
+                <button className='submit-button text-5xl outline-none hover:text-white hover:bg-gray-800 transition-all duration-300' type='submit'>Submit</button>
             </form>
             {errorMessage && (
                 <div>
-                    <p className="error-text text-black text-4xl lg:text-5xl mb-5">{errorMessage}</p>
+                    <p className="error-text text-white text-4xl lg:text-5xl mb-5">{errorMessage}</p>
                 </div>
             )}
         </main>

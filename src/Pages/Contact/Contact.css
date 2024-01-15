@@ -5,13 +5,14 @@
     border-radius: 5px;
     border: solid 1px black;
     color: black;
+    background-color: white;
   }
 
 .submit-button {
     display: flex;
     justify-content: flex-start;
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
     width: 10rem;
     height: 5rem;
     justify-content: center;

@@ -39,7 +39,7 @@ function Navbar() {
             <div className='w-full pt-3 lg:ml-3'>
                 <div className='flex justify-evenly'>
                     {navLinks.map((link, index) => (
-                        <a key={index} className='text-white transition-all duration-500 hover:bg-gray-600 hover:text-gray-300 px-3 py-2 rounded-md text-5xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
+                        <a key={index} className='text-white transition-all duration-500 hover:bg-gray-600 hover:text-gray-100 px-3 py-2 rounded-md text-5xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
                     ))}
                 </div>
             </div>

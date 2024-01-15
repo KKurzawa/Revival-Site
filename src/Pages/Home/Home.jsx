@@ -5,7 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 function Home() {
     return (
         <>
-            <main className='flex lg:hidden flex-col justify-center text-8xl'>
+            <main className='flex lg:hidden flex-col justify-center text-8xl text-white'>
                 <LazyLoadImage src={HomePhoto} alt='RevivalPic2' className='' />
                 <h2 className='flex justify-center mt-40 pt-1 pb-1'>The Ultimate</h2>
                 <h2 className='flex justify-center pt-1 pb-1'>Allman Brothers</h2>

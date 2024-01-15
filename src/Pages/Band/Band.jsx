@@ -6,7 +6,7 @@ function Band() {
     return (
         <>
             {/* small */}
-            <main className='flex flex-col justify-center pb-5 lg:hidden'>
+            <main className='flex flex-col justify-center pb-5 lg:hidden text-white'>
                 <h2 className='text-center text-8xl pt-4 pb-4'>Band</h2>
                 <section className='flex flex-col'>
                     {BandMembers.map((member) => (
@@ -46,8 +46,8 @@ function Band() {
                 </section>
             </main>
             {/* medium and large */}
-            <h2 className='text-center hidden lg:block text-6xl pt-3 pb-2'>Band</h2>
-            <main className='hidden lg:flex'>
+            <h2 className='text-white text-center hidden lg:block text-6xl pt-3 pb-2'>Band</h2>
+            <main className='hidden lg:flex text-white'>
                 <section className='justify-center pb-5'>
                     <section className='flex flex-col'>
                         {BandMembers.map((member, index) => index % 2 === 0 && (
