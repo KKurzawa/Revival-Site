@@ -49,11 +49,11 @@ const Contact = () => {
     return (
         <main className='flex flex-col items-center md:mb-0 min-h-64'>
             <LazyLoadImage id='ContactPic' src={ContactPic} />
-            <h2 className="heading-text text-black text-4xl md:text-6xl mt-5">Contact Us</h2>
-            <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
+            <h2 className="heading-text text-black text-8xl lg:text-8xl mt-5">Contact Us</h2>
+            <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%]'>
                 <input
                     autoComplete="off"
-                    className='input outline-none'
+                    className='input outline-none min-h-16 text-5xl'
                     type='text'
                     placeholder='Your Name'
                     value={name}
@@ -61,7 +61,7 @@ const Contact = () => {
                 />
                 <input
                     autoComplete="off"
-                    className='input outline-none'
+                    className='input outline-none min-h-16 text-5xl'
                     type='email'
                     placeholder='Your Email'
                     value={email}
@@ -69,7 +69,7 @@ const Contact = () => {
                 />
                 <input
                     autoComplete="off"
-                    className='input outline-none'
+                    className='input outline-none min-h-16 text-5xl'
                     type='subject'
                     placeholder='Subject'
                     value={subject}
@@ -77,7 +77,7 @@ const Contact = () => {
                 />
                 <textarea
                     autoComplete="off"
-                    className='input outline-none'
+                    className='input outline-none text-5xl'
                     cols='30'
                     rows='5'
                     placeholder='Message'
@@ -85,11 +85,11 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
-                <button className='submit-button outline-none hover:text-gray-300 hover:bg-gray-800 transition-all duration-300' type='submit'>Submit</button>
+                <button className='submit-button text-5xl outline-none hover:text-gray-300 hover:bg-gray-800 transition-all duration-300' type='submit'>Submit</button>
             </form>
             {errorMessage && (
                 <div>
-                    <p className="error-text text-black text-xl md:text-4xl mb-5">{errorMessage}</p>
+                    <p className="error-text text-black text-4xl lg:text-5xl mb-5">{errorMessage}</p>
                 </div>
             )}
         </main>
