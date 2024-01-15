@@ -47,7 +47,7 @@ export const BandMembers = [
         id: 3,
         name: 'Dale Grisa',
         pic: Dale,
-        description: "Karen Newman/Joe Shmoe/Jill Jack",
+        description: "Karen Newman/Beth Stalker/Jill Jack",
         facebookIcon: false,
         facebookLink: false,
         instagramIcon: false,

@@ -34,12 +34,12 @@ function Navbar() {
         <header className='flex flex-col lg:flex-row items-center justify-center bg-black w-full h-64'>
             <div className='lg:w-full'>
                 <a href='/' className=''>
-                    <img src={Logo} alt='RevivalLogo' className='w-full pt-5 lg:pt-0 lg:w-[200%] lg:ml-3'></img></a>
+                    <img src={Logo} alt='RevivalLogo' className='w-full pt-5 lg:pt-0 lg:w-[200%] lg:ml-3 transition-all duration-500 hover:bg-gray-600 rounded-md'></img></a>
             </div>
             <div className='w-full pt-3 lg:ml-3'>
                 <div className='flex justify-evenly'>
                     {navLinks.map((link, index) => (
-                        <a key={index} className='text-gray-300 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-5xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
+                        <a key={index} className='text-white transition-all duration-500 hover:bg-gray-600 hover:text-gray-300 px-3 py-2 rounded-md text-5xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
                     ))}
                 </div>
             </div>
