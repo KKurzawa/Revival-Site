@@ -36,15 +36,15 @@ function Shows() {
                 ))}
             </div>
             {/* medium/large */}
-            <div className='text-lg lg:text-2xl'>
+            <div className='text-4xl'>
                 {ShowList.map((show) => (
-                    <section className='section hidden lg:grid pl-10'>
+                    <section className='section hidden lg:grid pl-5'>
                         <div key={show.date} className='date pb-5'>{show.date}</div>
-                        <div key={show.id} className='time pb-5'>{show.time}</div>
+                        <div key={show.id} className='time pb-5 pl-5'>{show.time}</div>
                         <div className='venue pb-5'>
                             <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-gray-600 transition-all duration-300'>{show.venue}</a>
                         </div>
-                        <div className='tickets pb-5 grid justify-end pr-10'>
+                        <div className='tickets pb-5 grid justify-end pr-5'>
                             {show.ticketLink === false ? (
                                 <button onClick={handleClick} className='bg-black text-white p-[.15em] rounded-md hover:text-gray-300 hover:bg-gray-800 transition-all duration-300'>Tickets</button>
                             ) : (
