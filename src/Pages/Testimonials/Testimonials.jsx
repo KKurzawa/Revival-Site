@@ -67,7 +67,7 @@ function Testimonials() {
 
     return (
         <main className="flex flex-col items-center md:mb-0 min-h-screen bg-[#130253]">
-            <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} className='border-b-[1px] border-[#c94c2c]' />
+            <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} className='border-b-2 border-[#c94c2c]' />
             <h1 className="  text-white text-center text-7xl mt-5">Post About Your Experience <br></br>With Revival</h1>
             <form onSubmit={handleSubmit} className=" text-white flex flex-col content-center m-[20px] w-[50%]">
                 <input onChange={handleChange}
@@ -98,7 +98,7 @@ function Testimonials() {
                     rows='5'
                 >
                 </textarea>
-                <button className="post-button text-4xl text-black bg-white hover:text-white hover:bg-gray-800 transition-all duration-300">Add Post</button>
+                <button className="post-button text-4xl hover:text-white hover:bg-[#c94c2c] transition-all duration-300">Add Post</button>
             </form>
             <div className="comments-container text-white">
                 <h1 className="text-center text-3xl md:text-6xl -mb-4">Fan Experiences</h1>

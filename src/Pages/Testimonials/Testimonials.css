@@ -4,7 +4,7 @@
     margin-bottom: 5px;
     border-radius: 5px;
     border: solid 1px black;
-    color: black;
+    color: #130253;
     background-color: white;
 }
 
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: flex-start;
     background-color: white;
-    color:black;
+    color:#130253;
     width: 10rem;
     height: 4rem;
     justify-content: center;

@@ -5,7 +5,7 @@ import { IoLogoYoutube } from "react-icons/io";
 
 function Footer() {
     return (
-        <footer className=' bg-[#fe4701] h-48 flex flex-col justify-end border-t-[1px]'>
+        <footer className=' bg-[#fe4701] h-48 flex flex-col justify-end border-t-2 border-white'>
             <div className='flex justify-evenly items-center text-white text-8xl'>
                 <a href='https://www.facebook.com/revivalmusicdetroit/' target="_blank" rel="noreferrer" className='hover:text-[#ffffffb7] transition-all duration-300'><FaFacebook /></a>
                 <a href='https://www.instagram.com/thelucasband/' target="_blank" rel="noreferrer" className='hover:text-[#ffffffb7] transition-all duration-300'><FaInstagramSquare /></a>

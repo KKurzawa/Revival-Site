@@ -31,7 +31,7 @@ function Navbar() {
 
     return (
         // <div className='bg-black h-36 lg:h-44 w-full flex items-center'>
-        <header className='flex flex-col lg:flex-row items-center justify-center bg-[#130253] w-full h-64 border-b-[1px] border-[#c94c2c]'>
+        <header className='flex flex-col lg:flex-row items-center justify-center bg-[#130253] w-full h-64 border-b-2 border-[#c94c2c]'>
             <div className='lg:w-full'>
                 <a href='/' className=''>
                     <img src={Logo} alt='RevivalLogo' className='w-full mt-5 lg:pt-0 lg:w-[200%] lg:ml-3 transition-all duration-500 hover:bg-[#de4c28] rounded-md'></img></a>

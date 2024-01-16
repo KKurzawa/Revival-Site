@@ -48,7 +48,7 @@ const Contact = () => {
     }
     return (
         <main className='flex flex-col items-center md:mb-0 min-h-64 bg-[#130253]'>
-            <LazyLoadImage id='ContactPic' className='border-b-[1px] border-[#c94c2c]' src={ContactPic} />
+            <LazyLoadImage id='ContactPic' className='border-b-2 border-[#c94c2c]' src={ContactPic} />
             <h2 className="heading-text text-white text-8xl mt-20">Contact Us</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%]'>
                 <input
@@ -85,7 +85,7 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
-                <button className='submit-button text-5xl outline-none hover:text-white hover:bg-gray-800 transition-all duration-300' type='submit'>Submit</button>
+                <button className='submit-button text-5xl outline-none hover:text-white hover:bg-[#c94c2c] transition-all duration-300' type='submit'>Submit</button>
             </form>
             {errorMessage && (
                 <div>
