@@ -10,7 +10,7 @@ function Shows() {
 
     return (
         <main className='text-white bg-[#130253]'>
-            <LazyLoadImage src={ShowsPic} alt='RevivalPic2' className='border-b-2 border-[#c94c2c]' />
+            <LazyLoadImage src={ShowsPic} alt='RevivalPic2' className='border-b-4 border-[#c94c2c]' />
             <h2 className='text-center text-8xl py-5'>Shows</h2>
             {/* small */}
             <div className='text-6xl'>

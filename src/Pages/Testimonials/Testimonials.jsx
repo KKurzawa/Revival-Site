@@ -67,7 +67,7 @@ function Testimonials() {
 
     return (
         <main className="flex flex-col items-center md:mb-0 min-h-screen bg-[#130253]">
-            <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} className='border-b-2 border-[#c94c2c]' />
+            <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} className='border-b-4 border-[#c94c2c]' />
             <h1 className="  text-white text-center text-7xl mt-5">Post About Your Experience <br></br>With Revival</h1>
             <form onSubmit={handleSubmit} className=" text-white flex flex-col content-center m-[20px] w-[50%]">
                 <input onChange={handleChange}
