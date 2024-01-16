@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: black;
-}
+    background-color: #130253;
+} */

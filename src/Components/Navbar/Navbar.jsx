@@ -31,15 +31,15 @@ function Navbar() {
 
     return (
         // <div className='bg-black h-36 lg:h-44 w-full flex items-center'>
-        <header className='flex flex-col lg:flex-row items-center justify-center bg-black w-full h-64'>
+        <header className='flex flex-col lg:flex-row items-center justify-center bg-[#130253] w-full h-64 border-b-[1px] border-[#c94c2c]'>
             <div className='lg:w-full'>
                 <a href='/' className=''>
-                    <img src={Logo} alt='RevivalLogo' className='w-full mt-5 lg:pt-0 lg:w-[200%] lg:ml-3 transition-all duration-500 hover:bg-gray-600 rounded-md'></img></a>
+                    <img src={Logo} alt='RevivalLogo' className='w-full mt-5 lg:pt-0 lg:w-[200%] lg:ml-3 transition-all duration-500 hover:bg-[#de4c28] rounded-md'></img></a>
             </div>
             <div className='w-full pt-3 lg:ml-3'>
                 <div className='flex justify-evenly'>
                     {navLinks.map((link, index) => (
-                        <a key={index} className='text-white transition-all duration-500 hover:bg-gray-600 hover:text-gray-100 px-3 py-2 rounded-md text-5xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
+                        <a key={index} className='text-white transition-all duration-500 hover:bg-[#de4c28] hover:text-gray-100 px-3 py-2 rounded-md text-5xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
                     ))}
                 </div>
             </div>
