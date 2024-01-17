@@ -28,6 +28,6 @@
 
 .contactContainer {
   outline-style: solid;
-  outline-width: 1;
+  outline-width: 1px;
   outline-color: white;
 }
