@@ -11,11 +11,11 @@ function Shows() {
     return (
         <main className='text-white bg-[#130253]'>
             <LazyLoadImage src={ShowsPic} alt='RevivalPic2' className='border-b-8 border-[#c94c2c]' />
-            <h2 className='text-center text-8xl py-5'>Shows</h2>
+            <h2 className='shows text-center text-8xl py-5 text-[#c94c2c]'>Shows</h2>
             {/* small */}
             <div className='text-6xl'>
                 {ShowList.map((show) => (
-                    <section key={show.date} className='flex flex-col lg:hidden justify-center items-center'>
+                    <section key={show.date} className='showsText flex flex-col lg:hidden justify-center items-center'>
                         <div className='date-time flex flex-row justify-center'>
                             <div key={show.date} className='sm-date pr-1'>{show.date}</div>
                             <span className='pr-1'>@</span>
@@ -26,9 +26,9 @@ function Shows() {
                         </div>
                         <div className='sm-tickets pb-20'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='bg-white text-[#130253] p-[.15em] rounded-md hover:text-white hover:bg-[#c94c2c] transition-all duration-300'>Tickets</button>
+                                <button onClick={handleClick} className='bg-[#de4c28] text-white p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cbf] transition-all duration-300'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='bg-white text-[#130253] p-[.15em] rounded-md hover:text-white hover:bg-[#c94c2c] transition-all duration-300'>Tickets</button></a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='bg-[#de4c28] text-white p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc5] transition-all duration-300'>Tickets</button></a>
 
                             )}
                         </div>

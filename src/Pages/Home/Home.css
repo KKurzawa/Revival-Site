@@ -1,3 +1,7 @@
-.main{
-    background-image: linear-gradient(#c94c2c, #130253);
+.homeText{
+    text-shadow: 2px 2px 1px #c94c2c;
+}
+
+.detroit {
+    text-shadow: 1px 1px 1px white;
 }
