@@ -4,6 +4,6 @@
 
 .mainContainer {
     outline-style: solid;
-    outline-width: .25px;
+    outline-width: 1px;
     outline-color:white;
 }

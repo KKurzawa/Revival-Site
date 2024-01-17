@@ -28,3 +28,9 @@
 .postHeader {
     text-shadow: .5px .5px .5px white;
 }
+
+.postContainer {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+}

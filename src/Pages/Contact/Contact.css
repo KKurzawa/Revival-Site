@@ -25,3 +25,9 @@
   .contactHeader {
     text-shadow: .5px .5px .5px white;
 }
+
+.contactContainer {
+  outline-style: solid;
+  outline-width: 1;
+  outline-color: white;
+}
