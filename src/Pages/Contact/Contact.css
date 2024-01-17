@@ -11,8 +11,8 @@
 .submit-button {
     display: flex;
     justify-content: flex-start;
-    background-color: white;
-    color:#130253;
+    background-color: #de4c28;
+    color:white;
     width: 10rem;
     height: 5rem;
     justify-content: center;
@@ -21,3 +21,7 @@
     margin-top: .25rem;
     margin-bottom: 6rem;
   }
+
+  .contactHeader {
+    text-shadow: .5px .5px .5px white;
+}

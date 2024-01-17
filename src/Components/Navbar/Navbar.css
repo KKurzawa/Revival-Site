@@ -1,4 +1,9 @@
-.navText,
-.logo {
-    text-shadow: .25px .25px .25px white;
+.navText{
+    text-shadow: .5px .5px .5px white;
+}
+
+.mainContainer {
+    outline-style: solid;
+    outline-width: .25px;
+    outline-color:white;
 }

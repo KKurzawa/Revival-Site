@@ -1,7 +1,13 @@
 .homeText{
-    text-shadow: 2px 2px 1px #c94c2c;
+    text-shadow: 1px 1px 1px white;
 }
 
 .detroit {
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 2px 2px 2px #c94c2c;
+}
+
+.bodyContainer {
+    outline-style: solid;
+    outline-width: .25px;
+    outline-color: white;
 }

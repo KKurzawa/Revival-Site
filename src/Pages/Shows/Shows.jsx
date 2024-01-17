@@ -10,7 +10,7 @@ function Shows() {
 
     return (
         <main className='text-white bg-[#130253]'>
-            <LazyLoadImage src={ShowsPic} alt='RevivalPic2' className='border-b-8 border-[#c94c2c]' />
+            <LazyLoadImage src={ShowsPic} alt='RevivalPic2' className='showsContainer border-b-8 border-[#c94c2c]' />
             <h2 className='shows text-center text-8xl py-5 text-[#c94c2c]'>Shows</h2>
             {/* small */}
             <div className='text-6xl'>
@@ -46,9 +46,9 @@ function Shows() {
                         </div>
                         <div className='tickets pb-5 grid justify-end pr-5'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='bg-white text-[#130253] p-[.15em] rounded-md hover:text-white hover:bg-[#c94c2c] transition-all duration-300'>Tickets</button>
+                                <button onClick={handleClick} className='bg-[#de4c28] text-white p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc8] transition-all duration-300'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-white text-[#130253] p-[.15em] rounded-md hover:text-white hover:bg-[#c94c2c] transition-all duration-300'>Tickets</a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-[#de4c28] text-white p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc4] transition-all duration-300'>Tickets</a>
                             )}
                         </div>
                     </section>

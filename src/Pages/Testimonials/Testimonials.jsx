@@ -68,7 +68,7 @@ function Testimonials() {
     return (
         <main className="flex flex-col items-center md:mb-0 min-h-screen bg-[#130253]">
             <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} className='border-b-8 border-[#c94c2c]' />
-            <h1 className="  text-white text-center text-7xl mt-5">Post About Your Experience <br></br>With Revival</h1>
+            <h1 className="postHeader text-[#c94c2c] text-center text-7xl mt-5">Post About Your Experience <br></br>With Revival</h1>
             <form onSubmit={handleSubmit} className=" text-white flex flex-col content-center m-[20px] w-[50%]">
                 <input onChange={handleChange}
                     name="userfirstname" value={input.userfirstname}
@@ -98,14 +98,14 @@ function Testimonials() {
                     rows='5'
                 >
                 </textarea>
-                <button className="post-button text-4xl hover:text-white hover:bg-[#c94c2c] transition-all duration-300">Add Post</button>
+                <button className="post-button text-4xl hover:text-white hover:bg-[#c94b2cc2] transition-all duration-300">Add Post</button>
             </form>
             <div className="comments-container text-white">
-                <h1 className="text-center text-3xl md:text-6xl -mb-4">Fan Experiences</h1>
+                <h1 className="postHeader text-[#c94c2c] text-center text-3xl md:text-6xl -mb-4">Fan Experiences</h1>
                 {comments.map(item =>
                     <div className="mx-10 md:mx-14 lg:mx-20 my-6 md:my-8">
-                        <h2 key={item.comment} className="text-center text-2xl md:text-5xl pb-2">{item.comment}</h2>
-                        <h2 key={item.userfirstname} className="text-end text-lg md:text-3xl italic">- {item.userfirstname}&nbsp;{item.userlastname}</h2>
+                        <h2 key={item.comment} className="whiteText text-center text-2xl md:text-5xl pb-2">{item.comment}</h2>
+                        <h2 key={item.userfirstname} className="whiteText text-end text-lg md:text-3xl italic">- {item.userfirstname}&nbsp;{item.userlastname}</h2>
                     </div>)}
             </div>
         </main>

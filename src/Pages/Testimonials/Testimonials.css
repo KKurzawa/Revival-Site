@@ -11,8 +11,8 @@
 .post-button {
     display: flex;
     justify-content: flex-start;
-    background-color: white;
-    color:#130253;
+    background-color: #c94c2c;
+    color:white;
     width: 10rem;
     height: 4rem;
     justify-content: center;
@@ -20,3 +20,11 @@
     align-items: center;
     margin-top: .25rem;
   }
+
+  .whiteText{
+    text-shadow: 1.5px 1.5px 1.5px #c94c2c;
+}
+
+.postHeader {
+    text-shadow: .5px .5px .5px white;
+}
