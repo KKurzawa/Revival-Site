@@ -69,7 +69,7 @@ function Testimonials() {
         <main className="flex flex-col items-center md:mb-0 min-h-screen bg-[#130253]">
             <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} className='postContainer border-b-8 border-[#c94c2c]' />
             <h1 className="postHeader text-[#c94c2c] text-center pt-10 text-7xl">Post About Your Experience <br></br>With Revival</h1>
-            <form onSubmit={handleSubmit} className=" text-white flex flex-col content-center m-[30px] w-[50%]">
+            <form onSubmit={handleSubmit} className=" text-white flex flex-col content-center mt-[20px] w-[50%]">
                 <input onChange={handleChange}
                     name="userfirstname" value={input.userfirstname}
                     autoComplete="off"
