@@ -23,11 +23,15 @@
   }
 
   .contactHeader {
-    text-shadow: .5px .5px .5px white;
+    text-shadow: 1px 1px 1px white;
 }
 
 .contactContainer {
   outline-style: solid;
   outline-width: 1px;
   outline-color: white;
+}
+
+.error-text{
+  text-shadow: 3px 3px 3px #c94c2c;
 }

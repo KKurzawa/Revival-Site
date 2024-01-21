@@ -1,13 +1,13 @@
 .whiteText{
-    text-shadow: 1.5px 1.5px 1.5px #c94c2c;
+    text-shadow: 2px 2px 2px #c94c2c;
 }
 
 .bandHeader {
-    text-shadow: .5px .5px .5px white;
+    text-shadow: 1px 1px 1px white;
 }
 
 .icons{
-    filter: drop-shadow(1.5px 1.5px 1.5px #c94c2c);
+    filter: drop-shadow(2px 2px 2px #c94c2c);
 }
 
 .bandContainer {
