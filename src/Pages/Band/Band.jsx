@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Band() {
     return (
-        <div className='bg-[#130253] py-10'>
+        <div className='bandContainer bg-[#130253] py-10'>
             {/* small */}
             <main className='flex flex-col justify-center pb-5 lg:hidden text-white'>
                 <h2 className='bandHeader text-center text-8xl pb-10 text-[#de4c28]'>Band</h2>
