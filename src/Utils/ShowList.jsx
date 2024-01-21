@@ -1,13 +1,5 @@
 export const ShowList = [
     {
-        id: 1,
-        date: 'Jan 20 2024',
-        time: '8pm',
-        venue: "O'Malley's Super Spirits And Song",
-        venueLink: 'https://www.omalleyslivonia.com/',
-        ticketLink: false,
-    },
-    {
         id: 2,
         date: 'March 2 2024',
         time: '8:30pm',

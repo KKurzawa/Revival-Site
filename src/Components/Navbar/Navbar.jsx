@@ -32,15 +32,15 @@ function Navbar() {
 
     return (
         // <div className='bg-black h-36 lg:h-44 w-full flex items-center'>
-        <header className='mainContainer flex flex-col lg:flex-row items-center justify-center bg-[#130253] w-full h-64 border-b-8 border-[#c94c2c]'>
+        <header className='mainContainer flex flex-col lg:flex-row items-center justify-center bg-[#130253] w-full h-80 border-b-8 border-[#c94c2c]'>
             <div className='lg:w-full'>
                 <a href='/' className=''>
-                    <img src={Logo} alt='RevivalLogo' className=' logo bg-[#de4c28] w-full mt-6 lg:pt-0 lg:w-[200%] lg:ml-3 transition-all duration-500 hover:bg-[#de4c28cc] rounded-[10px]'></img></a>
+                    <img src={Logo} alt='RevivalLogo' className=' logo bg-[#de4c28] w-full mt-10 lg:pt-0 lg:w-[200%] lg:ml-3 transition-all duration-500 hover:bg-[#de4c28cc] rounded-[10px]'></img></a>
             </div>
-            <div className='w-full pt-3 lg:ml-3 pb-5'>
+            <div className='w-full pt-5 lg:ml-3 pb-5'>
                 <div className='flex justify-evenly'>
                     {navLinks.map((link, index) => (
-                        <a key={index} className='navText text-[#de4c28] transition-all duration-500 hover:bg-[#de4c28] hover:text-gray-100 px-3 py-2 rounded-[10px] text-5xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
+                        <a key={index} className='navText text-[#de4c28] transition-all duration-500 hover:bg-[#de4c28] hover:text-gray-100 px-3 py-2 rounded-[10px] text-6xl lg:text-4xl font-medium flex justify-end' href={link.link}>{link.title}</a>
                     ))}
                 </div>
             </div>
