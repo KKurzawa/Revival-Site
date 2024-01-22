@@ -9,7 +9,7 @@ function Shows() {
     }
 
     return (
-        <main className='text-white bg-[#130253]'>
+        <main className='text-[#f5f5f5] bg-[#130253]'>
             <LazyLoadImage src={ShowsPic} alt='RevivalPic2' className='showsContainer border-b-[17px] border-[#c94c2c]' />
             <h2 className='shows text-center text-8xl py-10 text-[#c94c2c]'>Shows</h2>
             {/* small */}
@@ -26,9 +26,9 @@ function Shows() {
                         </div>
                         <div className='sm-tickets pb-20'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='bg-[#de4c28] text-white p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cbf] transition-all duration-300'>Tickets</button>
+                                <button onClick={handleClick} className='bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cbf] transition-all duration-300'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='bg-[#de4c28] text-white p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc5] transition-all duration-300'>Tickets</button></a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc5] transition-all duration-300'>Tickets</button></a>
 
                             )}
                         </div>
@@ -46,9 +46,9 @@ function Shows() {
                         </div>
                         <div className='tickets pb-5 grid justify-end pr-5'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='bg-[#de4c28] text-white p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc8] transition-all duration-300'>Tickets</button>
+                                <button onClick={handleClick} className='bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc8] transition-all duration-300'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-[#de4c28] text-white p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc4] transition-all duration-300'>Tickets</a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md hover:text-white hover:bg-[#c94b2cc4] transition-all duration-300'>Tickets</a>
                             )}
                         </div>
                     </section>

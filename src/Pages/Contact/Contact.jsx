@@ -89,7 +89,7 @@ const Contact = () => {
             </form>
             {errorMessage && (
                 <div>
-                    <p className="error-text text-white text-4xl lg:text-5xl mb-5">{errorMessage}</p>
+                    <p className="error-text text-[#f5f5f5] text-4xl lg:text-5xl mb-5">{errorMessage}</p>
                 </div>
             )}
         </main>

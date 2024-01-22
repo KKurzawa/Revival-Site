@@ -69,7 +69,7 @@ function Testimonials() {
         <main className="flex flex-col items-center md:mb-0 min-h-screen bg-[#130253]">
             <LazyLoadImage id='TestimonialsPic' src={TestimonialsPic} className='postContainer border-b-[17px] border-[#c94c2c]' />
             <h1 className="postHeader text-[#c94c2c] text-center pt-10 text-7xl">Post About Your Experience <br></br>With Revival</h1>
-            <form onSubmit={handleSubmit} className=" text-white flex flex-col content-center mt-[20px] w-[50%]">
+            <form onSubmit={handleSubmit} className=" text-[#f5f5f5] flex flex-col content-center mt-[20px] w-[50%]">
                 <input onChange={handleChange}
                     name="userfirstname" value={input.userfirstname}
                     autoComplete="off"
@@ -100,7 +100,7 @@ function Testimonials() {
                 </textarea>
                 <button className="post-button text-4xl hover:text-white hover:bg-[#c94b2cc2] transition-all duration-300">Add Post</button>
             </form>
-            <div className="comments-container text-white mb-10">
+            <div className="comments-container text-[#f5f5f5] mb-10">
                 <h1 className="postHeader text-[#c94c2c] text-center text-7xl pt-5 -mb-4">Fan Experiences</h1>
                 {comments.map(item =>
                     <div className="mx-14 lg:mx-20 mt-10 mb-10">

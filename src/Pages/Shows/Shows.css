@@ -8,11 +8,11 @@
 }
 
 .shows {
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 1px 1px 1px whitesmoke;
 }
 
 .showsContainer{
         outline-style: solid;
         outline-width: 2px;
-        outline-color: white;
+        outline-color: whitesmoke;
 }

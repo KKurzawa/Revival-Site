@@ -6,7 +6,7 @@ function Band() {
     return (
         <div className='bandContainer bg-[#130253] py-10'>
             {/* small */}
-            <main className='flex flex-col justify-center pb-5 lg:hidden text-white'>
+            <main className='flex flex-col justify-center pb-5 lg:hidden text-[#f5f5f5]'>
                 <h2 className='bandHeader text-center text-8xl pb-10 text-[#de4c28]'>Band</h2>
                 <section className='flex flex-col'>
                     {BandMembers.map((member) => (
@@ -47,7 +47,7 @@ function Band() {
             </main>
             {/* medium and large */}
             <h2 className='bandHeader text-[#de4c28] text-center hidden lg:block text-8xl pb-10'>Band</h2>
-            <main className='hidden lg:flex text-white'>
+            <main className='hidden lg:flex text-[#f5f5f5]'>
                 <section className='justify-center pb-5'>
                     <section className='flex flex-col'>
                         {BandMembers.map((member, index) => index % 2 === 0 && (
