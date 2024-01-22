@@ -2,6 +2,10 @@
     text-shadow: .75px .75px .75px whitesmoke;
 }
 
+.navText:hover {
+    text-shadow: 1.5px 1.5px 1.5px #130253;
+}
+
 /* .mainContainer {
     outline-style: solid;
     outline-width: 1px;

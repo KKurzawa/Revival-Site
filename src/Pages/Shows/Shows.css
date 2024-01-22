@@ -3,6 +3,10 @@
     text-shadow: 3px 3px 3px #c94c2c;
 }
 
+.btn:hover {
+    text-shadow: 1px 1px 1px #130253;
+}
+
 .showsText{
     text-shadow: 3px 3px 3px #c94c2c;
 }

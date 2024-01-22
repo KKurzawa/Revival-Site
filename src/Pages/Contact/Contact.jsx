@@ -85,7 +85,7 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
-                <button className='submit-button text-5xl outline-none hover:text-white hover:bg-[#c94b2cc8] transition-all duration-300' type='submit'>Submit</button>
+                <button className='submit-button text-5xl outline-none hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[3.5rem] hover:w-[10.5rem] hover:h-[5.5rem]' type='submit'>Submit</button>
             </form>
             {errorMessage && (
                 <div>

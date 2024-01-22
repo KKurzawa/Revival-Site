@@ -98,7 +98,7 @@ function Testimonials() {
                     rows='5'
                 >
                 </textarea>
-                <button className="post-button text-4xl hover:text-white hover:bg-[#c94b2cc2] transition-all duration-300">Add Post</button>
+                <button className="post-button text-4xl hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[2.5rem] hover:w-[10.25rem] hover:h-[4.25rem]">Add Post</button>
             </form>
             <div className="comments-container text-[#f5f5f5] mb-10">
                 <h1 className="postHeader text-[#c94c2c] text-center text-7xl pt-5 -mb-4">Fan Experiences</h1>

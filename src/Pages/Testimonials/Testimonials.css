@@ -21,6 +21,10 @@
     margin-top: .75rem;
   }
 
+  .post-button:hover {
+    text-shadow: 1px 1px 1px #130253;
+}
+
   .whiteText{
     text-shadow: 3px 3px 3px #c94c2c;
 }

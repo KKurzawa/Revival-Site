@@ -22,6 +22,10 @@
     margin-bottom: 10px;
   }
 
+  .submit-button:hover {
+    text-shadow: 1px 1px 1px #130253;
+}
+
   .contactHeader {
     text-shadow: 1px 1px 1px whitesmoke;
 }
