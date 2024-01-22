@@ -11,34 +11,34 @@ function Band() {
                 <section className='flex flex-col'>
                     {BandMembers.map((member) => (
                         <div className='flex flex-col items-center'>
-                            <div key={member.name} className='whiteText text-5xl pb-1'>{member.name}</div>
-                            <LazyLoadImage key={member.pic} src={member.pic} alt={member.name} className='w-[75%] rounded-xl pb-1' />
-                            <div key={member.description} className='whiteText text-4xl text-center w-[75%] italic pb-1'>{member.description}</div>
-                            <div key={member.id} className='icons flex flex-row w-[50%] justify-center text-4xl pb-10'>
+                            <div key={member.name} className='whiteText text-6xl pb-3'>{member.name}</div>
+                            <LazyLoadImage key={member.pic} src={member.pic} alt={member.name} className='w-[75%] rounded-xl pb-2' />
+                            <div key={member.description} className='whiteText text-4xl text-center w-[75%] italic pb-2'>{member.description}</div>
+                            <div key={member.id} className='icons flex flex-row w-[50%] justify-center text-5xl pb-10'>
                                 {member.facebookIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-gray-600'>{member.facebookIcon}</a>
+                                    <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-gray-600'>{member.facebookIcon}</a>
                                 )}
                                 {member.instagramIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-gray-600'>{member.instagramIcon}</a>
+                                    <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-gray-400'>{member.instagramIcon}</a>
                                 )}
                                 {member.websiteIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-gray-600'>{member.websiteIcon}</a>
+                                    <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-gray-400'>{member.websiteIcon}</a>
                                 )}
                                 {member.appleMusicIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-gray-600'>{member.appleMusicIcon}</a>
+                                    <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-gray-400'>{member.appleMusicIcon}</a>
                                 )}
                                 {member.spotifyIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-gray-600'>{member.spotifyIcon}</a>
+                                    <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-gray-400'>{member.spotifyIcon}</a>
                                 )}
                             </div>
                         </div>
