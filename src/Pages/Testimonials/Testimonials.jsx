@@ -92,7 +92,7 @@ function Testimonials() {
                     value={input.comment}
                     autoComplete="off"
                     type="comment"
-                    className="form-group outline-none text-5xl"
+                    className="form-group outline-none text-5xl pt-3"
                     placeholder="Your Experience"
                     cols='30'
                     rows='5'

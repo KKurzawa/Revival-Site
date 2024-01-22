@@ -16,13 +16,13 @@ function Shows() {
             <div className='text-6xl'>
                 {ShowList.map((show) => (
                     <section key={show.date} className='showsText flex flex-col lg:hidden justify-center items-center'>
-                        <div className='date-time flex flex-row justify-center'>
+                        <div className='date-time flex flex-row justify-center pb-2'>
                             <div key={show.date} className='sm-date pr-1'>{show.date}</div>
                             <span className='pr-1'>@</span>
                             <div key={show.id} className='sm-time'>{show.time}</div>
                         </div>
                         <div className='sm-venue pb-5'>
-                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-[#ffffffb7] transition-all duration-500'>{show.venue}</a>
+                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-white hover:text-[4rem] transition-all duration-500'>{show.venue}</a>
                         </div>
                         <div className='sm-tickets pb-20'>
                             {show.ticketLink === false ? (
@@ -42,7 +42,7 @@ function Shows() {
                         <div key={show.date} className='date pb-5'>{show.date}</div>
                         <div key={show.id} className='time pb-5 pl-5'>{show.time}</div>
                         <div className='venue pb-5'>
-                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-[#ffffffb7] transition-all duration-500'>{show.venue}</a>
+                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-white hover:text-[2.5rem] transition-all duration-500'>{show.venue}</a>
                         </div>
                         <div className='tickets pb-5 grid justify-end pr-5'>
                             {show.ticketLink === false ? (

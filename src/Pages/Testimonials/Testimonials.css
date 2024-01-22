@@ -1,9 +1,9 @@
 .form-group{
-    padding-left: 2px;
+    padding-left: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: solid 2px #de4c28;
+    border: solid 3px #de4c28;
     color: #130253;
     background-color: whitesmoke;
 }

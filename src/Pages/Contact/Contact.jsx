@@ -77,7 +77,7 @@ const Contact = () => {
                 />
                 <textarea
                     autoComplete="off"
-                    className='input outline-none text-5xl'
+                    className='input outline-none text-5xl pt-3'
                     cols='30'
                     rows='5'
                     placeholder='Message'
