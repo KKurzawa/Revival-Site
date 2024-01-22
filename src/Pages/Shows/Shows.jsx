@@ -26,9 +26,9 @@ function Shows() {
                         </div>
                         <div className='sm-tickets pb-20'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[4rem]'>Tickets</button>
+                                <button onClick={handleClick} className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[4rem]'>Tickets</button></a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button></a>
 
                             )}
                         </div>
@@ -46,9 +46,9 @@ function Shows() {
                         </div>
                         <div className='tickets pb-5 grid justify-end pr-5'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[2.4rem]'>Tickets</button>
+                                <button onClick={handleClick} className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] border-[1px] border-[#f5f5f5] rounded-md hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[2.4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[2.4rem]'>Tickets</a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[2.4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</a>
                             )}
                         </div>
                     </section>
