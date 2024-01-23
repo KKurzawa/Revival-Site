@@ -10,6 +10,10 @@
     filter: drop-shadow(2px 2px 2px #c94c2c);
 }
 
+.icons:hover {
+    filter: drop-shadow(1px 1px 1px rgba(245, 245, 245, 0.797));
+}
+
 .bandContainer {
     outline-style: solid;
     outline-width: 2px;

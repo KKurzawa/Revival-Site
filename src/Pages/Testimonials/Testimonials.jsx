@@ -104,8 +104,8 @@ function Testimonials() {
                 <h1 className="postHeader text-[#c94c2c] text-center text-7xl pt-5 -mb-4">Fan Experiences</h1>
                 {comments.map(item =>
                     <div className="mx-14 lg:mx-20 mt-10 mb-10">
-                        <h2 key={item.comment} className="whiteText text-center text-2xl md:text-5xl pb-2">{item.comment}</h2>
-                        <h2 key={item.userfirstname} className="whiteText text-end text-lg md:text-3xl italic">- {item.userfirstname}&nbsp;{item.userlastname}</h2>
+                        <h2 key={item.comment} className="whiteText tracking-wide text-center text-2xl md:text-5xl pb-2">{item.comment}</h2>
+                        <h2 key={item.userfirstname} className="whiteText tracking-wide text-end text-lg md:text-3xl italic">- {item.userfirstname}&nbsp;{item.userlastname}</h2>
                     </div>)}
             </div>
         </main>
