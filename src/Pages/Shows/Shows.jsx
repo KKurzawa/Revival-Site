@@ -16,13 +16,13 @@ function Shows() {
             <div className='text-6xl'>
                 {ShowList.map((show) => (
                     <section key={show.date} className='showsText flex flex-col lg:hidden justify-center items-center'>
-                        <div className='date-time flex flex-row justify-center pb-2'>
+                        <div className='date-time flex flex-row justify-center pb-7'>
                             <div key={show.date} className='sm-date pr-1'>{show.date}</div>
                             <span className='pr-1'>@</span>
                             <div key={show.id} className='sm-time'>{show.time}</div>
                         </div>
-                        <div className='pb-5'>
-                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='venue hover:text-white hover:text-[3.85rem] ease-in-out duration-500'>{show.venue}</a>
+                        <div className='pb-7'>
+                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='venue hover:text-white hover:text-[3.85rem] hover:bg-[#de4c28] px-2 rounded-lg ease-in-out duration-700'>{show.venue}</a>
                         </div>
                         <div className='sm-tickets pb-20'>
                             {show.ticketLink === false ? (
