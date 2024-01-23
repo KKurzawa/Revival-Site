@@ -40,7 +40,7 @@ function Navbar() {
             <div className='w-full pt-5 lg:ml-3 pb-5'>
                 <div className='flex justify-evenly'>
                     {navLinks.map((link, index) => (
-                        <a key={index} className='navText text-[#de4c28] ease-in-out duration-700 hover:text-[3.85rem] hover:bg-[#de4c28] hover:text-[#f5f5f5] px-3 py-2 rounded-[10px] text-6xl lg:text-4xl lg:hover:text-[2.5rem] font-medium flex justify-end' href={link.link}>{link.title}</a>
+                        <a key={index} className='navText text-[#de4c28] tracking-wide ease-in-out duration-700 hover:text-[3.85rem] hover:bg-[#de4c28] hover:text-[#f5f5f5] px-3 py-2 rounded-[10px] text-6xl lg:text-4xl lg:hover:text-[2.5rem] font-medium flex justify-end' href={link.link}>{link.title}</a>
                     ))}
                 </div>
             </div>
