@@ -12,7 +12,7 @@
 }
 
 .shows {
-    text-shadow: 1px 1px 1px whitesmoke;
+    text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.799);
 }
 
 .showsContainer{
