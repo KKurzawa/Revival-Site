@@ -35,12 +35,12 @@ function Navbar() {
         <header className='mainContainer flex flex-col lg:flex-row items-center justify-center bg-[#130253] w-full h-80 border-b-[17px] border-[#c94c2c]'>
             <div className='lg:w-full'>
                 <a href='/' className=''>
-                    <img src={Logo} alt='RevivalLogo' className='logo bg-[#de4c28] w-full mt-10 lg:mt-0 lg:ml-3 transition-all duration-700 hover:bg-[#de4c28cc] lg:hover:w-[300%] rounded-[10px]'></img></a>
+                    <img src={Logo} alt='RevivalLogo' className='logo bg-[#de4c28] w-full mt-10 lg:mt-0 lg:ml-3 ease-in-out duration-700 hover:bg-[#de4c28cc] lg:hover:w-[300%] rounded-[10px]'></img></a>
             </div>
             <div className='w-full pt-5 lg:ml-3 pb-5'>
                 <div className='flex justify-evenly'>
                     {navLinks.map((link, index) => (
-                        <a key={index} className='navText text-[#de4c28] transition-all duration-700 hover:text-7xl hover:bg-[#de4c28] hover:text-[#f5f5f5] px-3 py-2 rounded-[10px] text-6xl lg:text-4xl lg:hover:text-[2.5rem] font-medium flex justify-end' href={link.link}>{link.title}</a>
+                        <a key={index} className='navText text-[#de4c28] ease-in-out duration-700 hover:text-[3.85rem] hover:bg-[#de4c28] hover:text-[#f5f5f5] px-3 py-2 rounded-[10px] text-6xl lg:text-4xl lg:hover:text-[2.5rem] font-medium flex justify-end' href={link.link}>{link.title}</a>
                     ))}
                 </div>
             </div>

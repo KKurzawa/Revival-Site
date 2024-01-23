@@ -22,13 +22,13 @@ function Shows() {
                             <div key={show.id} className='sm-time'>{show.time}</div>
                         </div>
                         <div className='sm-venue pb-5'>
-                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-white hover:text-[4rem] transition-all duration-500'>{show.venue}</a>
+                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-white hover:text-[3.85rem] ease-in-out duration-500'>{show.venue}</a>
                         </div>
                         <div className='sm-tickets pb-20'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button>
+                                <button onClick={handleClick} className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] ease-in-out duration-700 hover:text-[4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button></a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" ><button className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] ease-in-out duration-700 hover:text-[4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button></a>
 
                             )}
                         </div>
@@ -42,13 +42,13 @@ function Shows() {
                         <div key={show.date} className='date pb-5'>{show.date}</div>
                         <div key={show.id} className='time pb-5 pl-5'>{show.time}</div>
                         <div className='venue pb-5'>
-                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-white hover:text-[2.5rem] transition-all duration-500'>{show.venue}</a>
+                            <a href={show.venueLink} target="_blank" rel="noreferrer" className='hover:text-white hover:text-[2.35rem] ease-in-out duration-500'>{show.venue}</a>
                         </div>
                         <div className='tickets pb-5 grid justify-end pr-5'>
                             {show.ticketLink === false ? (
-                                <button onClick={handleClick} className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] border-[1px] border-[#f5f5f5] rounded-md hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[2.4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button>
+                                <button onClick={handleClick} className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] border-[1px] border-[#f5f5f5] rounded-md hover:text-[#de4c28] hover:bg-[#f5f5f5] ease-in-out duration-700 hover:text-[2.4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</button>
                             ) : (
-                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-700 hover:text-[2.4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</a>
+                                <a href={show.ticketLink} target="_blank" rel="noreferrer" className='btn bg-[#de4c28] text-[#f5f5f5] p-[.15em] rounded-md border-[1px] border-[#f5f5f5] hover:text-[#de4c28] hover:bg-[#f5f5f5] ease-in-out duration-700 hover:text-[2.4rem] hover:border-4 hover:border-[#de4c28]'>Tickets</a>
                             )}
                         </div>
                     </section>

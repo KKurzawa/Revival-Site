@@ -59,27 +59,27 @@ function Band() {
                                     {member.facebookIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.facebookIcon}</a>
+                                        <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.facebookIcon}</a>
                                     )}
                                     {member.instagramIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.instagramIcon}</a>
+                                        <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.instagramIcon}</a>
                                     )}
                                     {member.websiteIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.websiteIcon}</a>
+                                        <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.websiteIcon}</a>
                                     )}
                                     {member.appleMusicIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.appleMusicIcon}</a>
+                                        <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.appleMusicIcon}</a>
                                     )}
                                     {member.spotifyIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.spotifyIcon}</a>
+                                        <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.spotifyIcon}</a>
                                     )}
                                 </div>
                             </div>
@@ -97,27 +97,27 @@ function Band() {
                                     {member.facebookIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.facebookIcon}</a>
+                                        <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.facebookIcon}</a>
                                     )}
                                     {member.instagramIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.instagramIcon}</a>
+                                        <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.instagramIcon}</a>
                                     )}
                                     {member.websiteIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.websiteIcon}</a>
+                                        <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.websiteIcon}</a>
                                     )}
                                     {member.appleMusicIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.appleMusicIcon}</a>
+                                        <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.appleMusicIcon}</a>
                                     )}
                                     {member.spotifyIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-1 transition-all duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.spotifyIcon}</a>
+                                        <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#ffffffb1] hover:text-3xl'>{member.spotifyIcon}</a>
                                     )}
                                 </div>
                             </div>

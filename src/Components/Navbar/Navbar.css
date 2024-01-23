@@ -1,5 +1,5 @@
 .navText{
-    text-shadow: .75px .75px .75px whitesmoke;
+    text-shadow: .75px .75px .75px rgba(245, 245, 245, 0.796);
 }
 
 .navText:hover {
