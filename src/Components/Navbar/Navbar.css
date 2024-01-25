@@ -6,8 +6,12 @@
     text-shadow: 1.5px 1.5px 1.5px #130253;
 }
 
-/* .mainContainer {
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color:white;
-} */
+.logo:focus {
+    transition: transform 1s ease-in-out;
+    /* transform: rotateX(360deg); */
+    transform: rotateX(360deg);
+}
+
+.logo:hover {
+    box-shadow: 10px 10px 7px rgba(245, 245, 245, 0.799);
+}
