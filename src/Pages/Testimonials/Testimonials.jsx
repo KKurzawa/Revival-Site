@@ -100,14 +100,14 @@ function Testimonials() {
                 </textarea>
                 <button className="post-button text-4xl border-2 border-[rgba(245,245,245,0.79)] hover:text-[#de4c28] hover:bg-[#f5f5f5] transition-all duration-[1s] hover:text-[2.3rem] hover:border-2 hover:border-[#de4c28]">Add Post</button>
             </form>
-            <div className="comments-container text-[#f5f5f5] mb-10">
+            <article className="comments-container text-[#f5f5f5] mb-10">
                 <h1 className="postHeader text-[#c94c2c] text-center text-7xl pt-5 -mb-4">Fan Experiences</h1>
                 {comments.map(item =>
-                    <div className="mx-14 lg:mx-20 mt-10 mb-10">
+                    <section className="mx-14 lg:mx-20 mt-10 mb-10">
                         <h2 key={item.comment} className="whiteText tracking-wide text-center text-2xl md:text-5xl pb-2">{item.comment}</h2>
                         <h2 key={item.userfirstname} className="whiteText tracking-wide text-end text-lg md:text-3xl italic">- {item.userfirstname}&nbsp;{item.userlastname}</h2>
-                    </div>)}
-            </div>
+                    </section>)}
+            </article>
         </main>
     )
 }

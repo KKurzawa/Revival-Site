@@ -10,38 +10,38 @@ function Band() {
                 <h2 className='bandHeader text-center text-8xl pb-10 text-[#de4c28]'>Band</h2>
                 <section className='flex flex-col'>
                     {BandMembers.map((member) => (
-                        <div className='flex flex-col items-center'>
-                            <div key={member.name} className='whiteText tracking-wide text-6xl pb-3'>{member.name}</div>
+                        <article className='flex flex-col items-center'>
+                            <h3 key={member.name} className='whiteText tracking-wide text-6xl pb-3'>{member.name}</h3>
                             <LazyLoadImage key={member.pic} src={member.pic} alt={member.name} className='w-[75%] rounded-xl pb-2' />
-                            <div key={member.description} className='whiteText text-4xl tracking-wide text-center w-[75%] italic pb-2'>{member.description}</div>
-                            <div key={member.id} className='icons flex flex-row w-[50%] justify-center text-5xl  pb-10'>
+                            <h3 key={member.description} className='whiteText text-4xl tracking-wide text-center w-[75%] italic pb-2'>{member.description}</h3>
+                            <i key={member.id} className='flex flex-row w-[50%] justify-center text-5xl  pb-10'>
                                 {member.facebookIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-6xl'>{member.facebookIcon}</a>
+                                    <a href={member.facebookLink} target="_blank" rel="noreferrer" className='icons px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-[3.1rem]'>{member.facebookIcon}</a>
                                 )}
                                 {member.instagramIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-6xl'>{member.instagramIcon}</a>
+                                    <a href={member.instagramLink} target="_blank" rel="noreferrer" className='icons px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-[3.1rem]'>{member.instagramIcon}</a>
                                 )}
                                 {member.websiteIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-6xl'>{member.websiteIcon}</a>
+                                    <a href={member.websiteLink} target="_blank" rel="noreferrer" className='icons px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-[3.1rem]'>{member.websiteIcon}</a>
                                 )}
                                 {member.appleMusicIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-6xl'>{member.appleMusicIcon}</a>
+                                    <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='icons px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-[3.1rem]'>{member.appleMusicIcon}</a>
                                 )}
                                 {member.spotifyIcon === false ? (
                                     <div></div>
                                 ) : (
-                                    <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-6xl'>{member.spotifyIcon}</a>
+                                    <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='icons px-3 pt-1  transition-all duration-500 hover:text-[#de4c28] hover:text-[3.1rem]'>{member.spotifyIcon}</a>
                                 )}
-                            </div>
-                        </div>
+                            </i>
+                        </article>
                     ))}
                 </section>
             </main>
@@ -51,76 +51,76 @@ function Band() {
                 <section className='justify-center pb-5'>
                     <section className='flex flex-col'>
                         {BandMembers.map((member, index) => index % 2 === 0 && (
-                            <div className='flex flex-col items-center'>
-                                <div key={member.name} className='whiteText tracking-wide text-3xl pb-1'>{member.name}</div>
+                            <article className='flex flex-col items-center'>
+                                <h3 key={member.name} className='whiteText tracking-wide text-3xl pb-1'>{member.name}</h3>
                                 <LazyLoadImage key={member.pic} src={member.pic} alt={member.name} className='w-[75%] h-auto rounded-xl pb-1' />
-                                <div key={member.description} className='whiteText tracking-wide text-xl text-center w-[75%] italic pb-1'>{member.description}</div>
-                                <div key={member.id} className='icons flex flex-row w-[50%] justify-center text-2xl pb-10'>
+                                <h3 key={member.description} className='whiteText tracking-wide text-xl text-center w-[75%] italic pb-1'>{member.description}</h3>
+                                <i key={member.id} className='flex flex-row w-[50%] justify-center text-2xl pb-10'>
                                     {member.facebookIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.facebookIcon}</a>
+                                        <a href={member.facebookLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.facebookIcon}</a>
                                     )}
                                     {member.instagramIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.instagramIcon}</a>
+                                        <a href={member.instagramLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.instagramIcon}</a>
                                     )}
                                     {member.websiteIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.websiteIcon}</a>
+                                        <a href={member.websiteLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.websiteIcon}</a>
                                     )}
                                     {member.appleMusicIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.appleMusicIcon}</a>
+                                        <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.appleMusicIcon}</a>
                                     )}
                                     {member.spotifyIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.spotifyIcon}</a>
+                                        <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.spotifyIcon}</a>
                                     )}
-                                </div>
-                            </div>
+                                </i>
+                            </article>
                         ))}
                     </section>
                 </section>
                 <section className='justify-center pb-5'>
                     <section className='flex flex-col'>
                         {BandMembers.map((member, index) => index % 2 !== 0 && (
-                            <div className='flex flex-col items-center'>
-                                <div key={member.name} className='whiteText tracking-wide text-3xl pb-1'>{member.name}</div>
+                            <article className='flex flex-col items-center'>
+                                <h3 key={member.name} className='whiteText tracking-wide text-3xl pb-1'>{member.name}</h3>
                                 < LazyLoadImage key={member.pic} src={member.pic} alt={member.name} className='w-[75%] h-auto rounded-xl pb-1' />
-                                <div key={member.description} className='whiteText text-xl tracking-wide text-center w-[75%] italic pb-1'>{member.description}</div>
-                                <div key={member.id} className='icons flex flex-row w-[50%] justify-center text-2xl pb-10'>
+                                <h3 key={member.description} className='whiteText text-xl tracking-wide text-center w-[75%] italic pb-1'>{member.description}</h3>
+                                <i key={member.id} className='flex flex-row w-[50%] justify-center text-2xl pb-10'>
                                     {member.facebookIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.facebookLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.facebookIcon}</a>
+                                        <a href={member.facebookLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.facebookIcon}</a>
                                     )}
                                     {member.instagramIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.instagramLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.instagramIcon}</a>
+                                        <a href={member.instagramLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.instagramIcon}</a>
                                     )}
                                     {member.websiteIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.websiteLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.websiteIcon}</a>
+                                        <a href={member.websiteLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.websiteIcon}</a>
                                     )}
                                     {member.appleMusicIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.appleMusicIcon}</a>
+                                        <a href={member.appleMusicLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.appleMusicIcon}</a>
                                     )}
                                     {member.spotifyIcon === false ? (
                                         <div></div>
                                     ) : (
-                                        <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-3xl'>{member.spotifyIcon}</a>
+                                        <a href={member.spotifyLink} target="_blank" rel="noreferrer" className='icons px-1 ease-in-out duration-500 hover:text-[#de4c28] hover:text-[1.55rem]'>{member.spotifyIcon}</a>
                                     )}
-                                </div>
-                            </div>
+                                </i>
+                            </article>
                         ))}
                     </section>
                 </section>
