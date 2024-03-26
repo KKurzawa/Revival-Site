@@ -2,9 +2,9 @@
 # Kris Kurzawa Development
 
 ## Description
-Client side for a professional website for Revival: A Tribute to the Allman Brothers built with React, styled with Tailwind, and deployed with Vercel.
+Client side for a professional website for Revival: A Tribute to the Allman Brothers built with React, styled with Tailwind, and deployed with Vercel.  Server in seperate repository, see link below.
 
-![screenshot](https://github.com/KKurzawa/Ani-Difranco-Transcriptions/blob/main/public/AniScreenshot.png)
+![screenshot](https://github.com/KKurzawa/Revival-Site/blob/main/public/Screenshot.png)
 
 [Github Repository](https://github.com/KKurzawa/Ani-Difranco-Transcriptions)
 
